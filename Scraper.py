@@ -5,13 +5,13 @@ import time
 
 
 WEBSITE = "https://www.wimoveis.com.br/apartamentos-venda-aguas-claras-df-mais-de-3-banheiros-3-quartos-mais-de-1-vaga-100-130-m2.html"
-FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfZeE_1kND9FBzf2hBquHegfVIVS-iUhr8-ACz0ISDTh5hddQ/viewform?usp=sf_link"
+FORM = "your_form_url"
 
 
 class Scraper:
 
     def __init__(self):
-        chrome_driver_path = "E:\Documentos\Development\chromedriver.exe"
+        chrome_driver_path = "E:\Documentos\Development\chromedriver.exe"   #Your driver path here
         self.driver = webdriver.Chrome(executable_path=chrome_driver_path)
         self.driver.maximize_window()
         self.price_list = []
